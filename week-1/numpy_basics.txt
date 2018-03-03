@@ -1,0 +1,59 @@
+-Creating Arrays
+
+-Numpy API
+  array()
+  shape
+  arange()
+  reshape()
+  linespace()
+  resize()
+  ones()
+  zeros()
+  eye()
+  diag()
+  repeating list or tile
+  repeat()
+
+-Combining Arrays
+  vstack()
+  hstack()
+
+-Operations
+  +, -, *, /, and ** (elementwise)
+  dot() - Dot product
+  .T - Transpose
+  dtype - to see data type of elements in the array
+  astype() - to cast to a specific type
+
+-Math Functions
+  sum()
+  max()
+  min()
+  mean()
+  std()
+  argmax()
+  argmin()
+    argmax and argmin return the index of the maximum and minimum values in
+    the array.
+
+-Indexing / Slicing
+  Use : to indicate a range. array[start:stop]
+  Leaving start or stop empty will default to the beginning/end of the array.
+  Use negatives to count from the back.
+  A second : can be used to indicate step-size. array[start:stop:stepsize]
+  Use bracket notation to slice: array[row, column]
+  And use : to select a range of rows or columns
+  Conditional Indexing - np.where
+
+-Copying Data
+  Be careful with copying and modifying arrays in NumPy!
+  [:] selects the entire array
+  use r.copy to create a copy that will not affect the original array
+
+-Iterating Over Arrays
+  np.random.randomint()
+  Iterate by row
+  Iterate by index
+  Iterate by row and index - use enumerate() function which adds a counter
+                              to an iterable.
+  Use zip to iterate over multiple iterables
