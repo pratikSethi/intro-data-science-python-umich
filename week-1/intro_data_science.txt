@@ -1,0 +1,35 @@
+-Data Science (UMich)
+
+-Drew Conway's perspective on data science:
+  Hacking skills
+  Math and Statistics Knowledge
+  Substantive expertise
+
+-Other data science perspectives:
+  Skepticism, experimentation, simulation, and replication
+
+-Develop some communication skills in the form of charting, graphing, and
+related visualizations. A good data scientist is one who can communicate their
+findings clearly to others and having some fundamental tools in the toolkit as
+useful here.
+
+-David Donoho, Stanford University, article on the last 50 years of
+Data Science and the direction the field is headed. This is a fairly long
+and academic article, but is excellent overview of the field.
+
+http://courses.csail.mit.edu/18.337/2015/docs/50YearsDataScience.pdf
+
+-The Full Scope of Data Science (From the paper above)
+
+  -The Six Divisions
+
+  1. Data Exploration and Preparation
+  2. Data Representation and Transformation
+  3. Computing with Data
+  4. Data Modeling
+  5. Data Visualization and Presentation
+  6. Science about Data Science
+
+Note:
+  Infoviz is a field of its own and is closely associated with the 5th point
+  above.

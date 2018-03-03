@@ -1,0 +1,50 @@
+- Python Programming Language - Basics
+
+Data Types
+
+Functions
+
+Tuples - Immutable data structure
+
+Lists - Mutable data structures
+
+Append
+
+Looping
+
+Indexing operator
+
++ operator to concatenate lists
+
+* to repeat lists
+
+in operator to check if something is inside the list
+
+Bracket notation to slice a string
+
+Dictionaries associate keys with values.
+  Iterate over all the keys, values, and items
+
+unpack a sequence
+
+- Python Programming Language : More on Strings
+
+in python3 strings are UNICODE based
+
+Formatted string literals
+  prefixed with 'f'
+  .format()
+
+Reading and writing CSV files
+
+List Comprehension - http://www.secnetix.de/olli/Python/list_comprehensions.hawk
+
+- Python : Dates and Time
+
+datetime and time modules
+  time() returns the current time in seconds since the Epoch
+
+- Advanced Python
+  Objects and map()
+
+  Lambda and List Comprehension
