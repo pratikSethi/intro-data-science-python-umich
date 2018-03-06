@@ -1,0 +1,10 @@
+-The Dataframe Data Structure
+  This is the heart of the Panda's library
+  It's a primary object that you'll be working with in data analysis
+  and cleaning tasks.
+
+  The DataFrame is conceptually a two-dimensional series object,
+  where there's an index and multiple columns of content, with each
+  column having a label. In fact, the distinction between a column and
+  a row is really only a conceptual distinction. And you can think of
+  the DataFrame itself as simply a two-axes labeled array.

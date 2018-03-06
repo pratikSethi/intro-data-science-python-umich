@@ -1,0 +1,57 @@
+Basic Data Processing with Pandas
+
+-The Series Data Structure
+  Series()
+  list to series and dict to series
+  nan and None
+  head()
+  We see that mixed types for data values or index labels are no problem
+  for Pandas.
+
+Difference between NaN and None and how does efficiency reasons around it
+
+-Querying a Series
+  A panda.Series can be queried, either by the index position or the
+  index label. As we saw, if you don't give an index to the series,
+  the position and the label are effectively the same values
+
+  iloc - index based attribute
+  loc - label based attribute
+  Safer to use iloc and loc attributes directly as compared to indexing op
+
+-Vectorization in Numpy library
+  a pretty shocking difference in the speed and demonstrates why data
+  scientists need to be aware of parallel computing features and start
+  thinking in functional programming terms
+
+-Magic Functions in jupyter
+  begin with a % sign. In jupyter notebook you can use '%' + 'tab'
+
+  you can write your own magic functions too!!!
+
+  Cellular Magic Functions - begin with 2 '%' sign
+  %%timeit -n no_of_iterations
+
+-Broadcasting in pandas and numpy
+  Pandas does support iterating through a series much like a dictionary,
+  allowing you to unpack values easily. But if you find yourself iterating
+  through a series, you should question whether you're doing things in the
+  best possible way.
+
+  With broadcasting, you can apply an operation to every value in the series,
+  changing the series.
+
+  For instance, if we wanted to increase every random variable by 2, we
+  could do so quickly using the += operator directly on the series object.
+
+-Custom Vectorized Functions
+  Go through the numpy documentation to understand this better.
+
+-Gotchas
+   the append method doesn't actually change the underlying series.
+   It instead returns a new series which is made up of the two appended
+   together
+
+   This is actually a significant issue for new Pandas users who are used
+   to objects being changed in place. So watch out for it, not just with
+   append but with other Pandas functions as well.
