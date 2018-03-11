@@ -3,8 +3,68 @@
   It's a primary object that you'll be working with in data analysis
   and cleaning tasks.
 
+  df.columns
+  df.head()
+  df.rename()
+
   The DataFrame is conceptually a two-dimensional series object,
   where there's an index and multiple columns of content, with each
   column having a label. In fact, the distinction between a column and
   a row is really only a conceptual distinction. And you can think of
   the DataFrame itself as simply a two-axes labeled array.
+
+  Projection and view in relational databases
+
+  Chaining can come with some costs and is best avoided if you can use
+  another approach. In particular, chaining tends to cause Pandas to
+  return a copy of the DataFrame instead of a view on the DataFrame.
+  For selecting a data, this is not a big deal, though it might be slower
+  than necessary. If you are changing data though, this is an important
+  distinction and can be a source of error
+
+  .loc also supports slicing. If we wanted to select all rows, we can
+  use a column to indicate a full slice from beginning to end. And then
+  add the column name as the second parameter as a string
+
+-Selecting and projecting data from a DataFrame based on row and column labels.
+  The key concepts to remember are that the rows and columns are really
+  just for our benefit. Underneath this is just a two axes labeled array,
+  and transposing the columns is easy.
+
+  Also, consider the issue of chaining carefully, and try to avoid it,
+  it can cause unpredictable results. Where your intent was to obtain a
+  view of the data, but instead Pandas returns to you a copy. In the
+  Panda's world, friends don't let friends chain calls. So if you see it,
+  point it out, and share a less ambiguous solution.
+  See the caveats in the documentation:
+  http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  df.loc["Store 2"]["Cost"] = 10 (Causes warning)
+  df.loc["Store 2", "Cost"] = 10 (Proper Behavior)
+
+-Dropping Data
+  del (another way to drop a column, immediate effect, does not return a view)
+  drop (Drop has two interesting optional parameters)
+
+  It's easy to delete data in series and DataFrames, and we can use the
+  drop function to do so. This function takes a single parameter, which is
+  the index or roll label, to drop. This is another tricky place for new
+  users to pad this. The drop function doesn't change the DataFrame by
+  default. And instead, returns to you a copy of the DataFrame with the
+  given rows removed. We can see that our original DataFrame is still
+  intact. Let's make a copy with the copy method and do a drop on it
+  instead. This is a very typical pattern in Pandas, where in place changes
+  to a DataFrame are only done if need be, usually on changes involving
+  indices. So it's important to be aware of.
+
+-Adding a new column
+  adding a new column to the DataFrame is as easy as assigning it to
+  some value. For instance, if we wanted to add a new location as a column
+  with default value of none, we could do so by using the assignment operator
+  after the square brackets. This broadcasts the default value to the new
+  column immediately.
+
+-Dataframe Indexing and Loading
+
+NOTE: Please refer the jupyter notebook to follow along the notes.
+      ! invokes the shell commands in jupyter notebook
+      unicode numero symbol
