@@ -58,6 +58,8 @@ the Pandas data tool kit
   For instance, if we wanted to increase every random variable by 2, we
   could do so quickly using the += operator directly on the series object.
 
+  iteritems()
+
 -Custom Vectorized Functions
   Go through the numpy documentation to understand this better.
 
