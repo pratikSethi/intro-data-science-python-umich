@@ -1,14 +1,28 @@
 Basic Data Processing with Pandas
 
+Python can be used to manipulate, clean, and query data by looking at
+the Pandas data tool kit
+
 -The Series Data Structure
   Series()
+
+  The series is one of the core data structures in pandas. You think of it
+  a cross between a list and a dictionary. The items are all stored in
+  an order and there's labels with which you can retrieve them. An easy way
+  to visualize this is two columns of data. The first is the special index,
+  a lot like the dictionary keys. While the second is your actual data.
+  It's important to note that the data column has a label of its own and
+  can be retrieved using the .name attribute. This is different than
+  with dictionaries and is useful when it comes to merging multiple
+  columns of data.
+
   list to series and dict to series
-  nan and None
+  difference between nan and None
   head()
   We see that mixed types for data values or index labels are no problem
   for Pandas.
 
-Difference between NaN and None and how does efficiency reasons around it
+  Difference between NaN and None and how does efficiency reasons around it
 
 -Querying a Series
   A panda.Series can be queried, either by the index position or the
