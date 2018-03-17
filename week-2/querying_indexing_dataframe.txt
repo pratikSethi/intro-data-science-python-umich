@@ -1,0 +1,6 @@
+-Querying a Dataframe
+
+  inplace parameter
+  contains()
+  where()
+  
