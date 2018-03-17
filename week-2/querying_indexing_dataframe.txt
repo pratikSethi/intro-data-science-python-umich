@@ -1,6 +1,55 @@
 -Querying a Dataframe
 
-  inplace parameter
+  inplace param
   contains()
   where()
-  
+  count()
+  axis param - default is zero, which means rows.
+  dropna() - to drop those rows which have no data.
+
+-Boolean masking in numpy
+  Boolean masking is the heart of fast and efficient querying in NumPy.
+
+  A Boolean mask is an array which can be of one dimension like a series,
+  or two dimensions like a data frame, where each of the values in the
+  array are either true or false. This array is essentially overlaid on
+  top of the data structure that we're querying. And any cell aligned with
+  the true value will be admitted into our final result, and any sign
+  aligned with a false value will not.
+
+  Boolean masks are created by applying operators directly to the pandas
+  series or DataFrame objects.
+
+  The pandas developers allow the indexing operator to take a Boolean mask
+  as a value instead of just a list of column names
+
+  Remember that each Boolean mask needs to be encased in parenthesis
+  because of the order of operations.
+  eg: df[(df['Gold.1'] > 0) & (df['Gold'] == 0)]
+
+  Applying masks to data frames is really a core panda's work flow
+
+-Indexing Dataframes
+
+  set_index() - Set index is a destructive process, it doesn't keep the
+    current index. If you want to keep the current index, you need to
+    manually create a new column and copy into it values from the index
+    attribute.
+
+  reset_index()
+
+  unique()
+
+  set_index on composite key or Multi-level indexing in Pandas (MultiIndex)
+
+  How to query dataframes with composite key as the index
+  (hierarchical indices)
+    the loc attribute of the DataFrame can take multiple arguments. And
+    it could query both the row and the columns. When you use a MultiIndex,
+    you must provide the arguments in order by the level you wish to query.
+    Inside of the index, each column is called a level and the outermost
+    column is level zero.
+
+    That's how hierarchical indices work in a nutshell. They're a special
+    part of the pandas library which I think can make management and
+    reasoning about data easier

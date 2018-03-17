@@ -64,6 +64,8 @@ the Pandas data tool kit
   Go through the numpy documentation to understand this better.
 
 -Gotchas
+  append()
+  
    the append method doesn't actually change the underlying series.
    It instead returns a new series which is made up of the two appended
    together
